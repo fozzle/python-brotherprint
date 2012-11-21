@@ -24,6 +24,7 @@ Invoke escp commands through certain BrotherLabel object methods (see actual fil
 Make sure to end with the print page command, signifying the end of a label.
 
     printjob.command_mode()
+    printjob.initialize()
     printjob.bold('on')
     printjob.send(<text>)
     printjob.print_page(<cut_setting>)
