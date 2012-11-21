@@ -14,13 +14,15 @@ You should review the official Brother documentation [here (ESCP Docs)](http://w
 
 ## Setup
 Regardless of which mode you are using, you need to intialize and connect a socket object, and pass the resulting socket object to the BrotherLabel object instantiator.
+
     f_socket = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
     f_socket.connect((<ip_address>,<port (9100 by default for QL580N)>))
     printjob = BrotherLabel(f_socket)
 
 ### ESC/P Printing
 Invoke escp commands through certain BrotherLabel object methods (see actual file for method descriptions)
-Make sure to end with a form feed, signifying the end of a label.
+Make sure to end with the print page command, signifying the end of a label.
+
     printjob.command_mode()
     printjob.bold('on')
     printjob.send(<text>)
