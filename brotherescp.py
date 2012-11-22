@@ -465,8 +465,8 @@ class BrotherLabel:
         Raises:
             None
         '''
-        self.cutSetting(cut)
-        self.pageFeed()
+        self.cut_setting(cut)
+        self.page_feed()
         
     def frame(self, action):
         '''Places/removes frame around text
