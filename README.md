@@ -6,6 +6,13 @@ Brother networked label printers library for Python
 This was developed for the QL-580N but I've heard it also works for the following:
 *QL-720NW
 
+Installation
+============
+
+The easiest way to install this package is with pip.
+    
+    pip install brotherprint
+
 Usage
 =====
 
@@ -15,6 +22,7 @@ You should review the official Brother documentation [here (ESCP Docs)](http://w
 ## Setup
 Regardless of which mode you are using, you need to intialize and connect a socket object, and pass the resulting socket object to the BrotherLabel object instantiator.
 
+    from brotherprint import BrotherPrint
     f_socket = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
     f_socket.connect((<ip_address>,<port (9100 by default for QL580N)>))
     printjob = BrotherPrint(f_socket)
