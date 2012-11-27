@@ -9,5 +9,5 @@ setup(
     url='http://github.com/fozzle/python-brotherprint',
     license='LICENSE.txt',
     description='Wrapper for Brother networked label printing commands.',
-    long_description=open('README.txt').read(),
+    long_description=open('README.md').read(),
 )
