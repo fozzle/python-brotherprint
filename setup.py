@@ -1,8 +1,8 @@
 from distutils.core import setup
 
 setup(
-    name='BrotherPrint',
-    version='0.1.0',
+    name='brotherprint',
+    version='0.1.1',
     author='Kyle Petrovich',
     author_email='kylepetrovich@gmail.com',
     packages=['brotherprint', 'brotherprint.test'],
