@@ -4,6 +4,7 @@ python-brotherprint
 Brother networked label printers library for Python
 
 This was developed for the QL-580N but I've heard it also works for the following:
+
 *QL-720NW
 
 Installation
