@@ -1,1 +1,2 @@
+v1.1.2, 9/24/2015 -- Bug fix for abs_horz_pos and rel_horz_pos parameters handling.
 v.1, 11/27/2012 -- Initial release.
