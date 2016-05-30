@@ -27,8 +27,9 @@ You should review the official Brother documentation [here (ESCP Docs)](http://w
 Regardless of which mode you are using, you need to intialize and connect a socket object, and pass the resulting socket object to the BrotherLabel object instantiator.
 
     from brotherprint import BrotherPrint
+    from socket
     f_socket = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
-    f_socket.connect((<ip_address>,<port (9100 by default for QL580N)>))
+    f_socket.connect(('<ip_address>', <port (9100 by default for QL580N)>))
     printjob = BrotherPrint(f_socket)
 
 ### ESC/P Printing
